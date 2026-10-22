@@ -4,7 +4,7 @@ Self-hosting Kortix or one of the CrewAI alternatives raises the same three ques
 
 ## Kortix: one Docker Compose stack on a server you control
 
-A self-hosted Kortix instance is the full platform on a server you control. The `kortix self-host` CLI installs, configures and updates one Docker Compose stack that carries the web app, the API, the LLM gateway and the Supabase distribution ([Read the docs](https://kortix.com/docs/host)). The stack needs a Linux server with a public IP, DNS for the domain and its API subdomain, ports 80 and 443 open, a sandbox provider key (Daytona, Platinum or E2B), and a model provider key you add after the first sign-in.
+A self-hosted Kortix instance is the full platform on a server you control. The `kortix self-host` CLI installs, configures and updates one Docker Compose stack that carries the web app, the API, the LLM gateway and the Supabase distribution ([Read the docs](https://kortix.com/docs/host)). The stack needs a Linux server with a public IP, DNS for the domain and its API subdomain, ports 80 and 443 open, a sandbox provider key (Platinum or the legacy Daytona fallback), and a model provider key you add after the first sign-in.
 
 The sessions themselves run on a cloud sandbox provider, not on that server, so the instance must be reachable from the internet for a sandbox to call back.
 
